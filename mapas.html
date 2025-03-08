@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="Español">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.K.C - Mapas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png">
+    <script src="spanish.js"></script>
+</head>
+<body id="uptop">
+    <header>
+        <div class="logo-title">
+            <img src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
+            <div class="title-text">Accesibilidad en Kalamazoo College</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="entrevistas.html">Entrevistas</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="language-switcher">
+        <div class="text-contain">  
+            <label>Tamaño de Letra:</label>
+        </div>
+        <div style="position: relative; height: 20px;" class="slider-container">
+            <input style="position: relative; top: -20px;" type="range" min="1" max="4" value="2" class="slider" id="slider" oninput="adjustFontSize(this.value)">
+        </div>
+        <div class="language-actual">
+            <a href="maps.html" class="button">English</a>
+        </div>
+    </div>
+    <main style="min-height: 100vh;">
+        <div class="content-box" style="line-height: 1;font-size: 1.4em; margin-top: 0px; height: fit-content;">
+            <h3 style="text-align: left;">Mapas de accesibilidad de Kalamazoo College:</h3>
+            <a style="float: left;text-decoration: none;padding: 10px 15px;border-radius: 15px;background-color: #EC6820;color: #ffffff;transition: background-color 0.3s; border: 3px solid #361f1f" href="#edificios">Edificios</a><a style="float: left; margin-left: 20px;text-decoration: none;padding: 10px 15px;border-radius: 15px;background-color: #EC6820;color: #ffffff;transition: background-color 0.3s; border: 3px solid #361f1f" href="#caminos">Caminos</a><a style="float: left; margin-left: 20px;text-decoration: none;padding: 10px 15px;border-radius: 15px;background-color: #EC6820;color: #ffffff;transition: background-color 0.3s; border: 3px solid #361f1f" href="#estacionamiento">Estacionamiento</a><br><br>
+        </div>
+        <div class="content-box">
+            <a id="edificios"style="text-decoration: none;color:black" href="#uptop">▲</a><h2 style="text-align: left;">Edificios accesibles</h2>
+            <img src="https://i.gyazo.com/da92c594d8225b1bacf153255c09617e.png" >
+        </div>
+        <div class="content-box">
+            <a id="caminos"style="text-decoration: none;color:black" href="#uptop">▲</a><h2 style="text-align: left;">Caminos accesibles</h2>
+            <img src="https://i.gyazo.com/6722b534854bf7925bbe38878b61be5f.png"  >
+        </div>
+        <div class="content-box">
+            <a id="estacionamiento"style="text-decoration: none;color:black" href="#uptop">▲</a><h2 style="text-align: left;">Estacionamiento accesible</h2>
+            <img src="https://i.gyazo.com/3f0925e1397cf104b906917863114afc.png"  >
+        </div>
+    </main>
+</body>
+<footer> 
+    <div class="content-box">
+        <p>©2025 Accessibility at Kalamazoo College • All Rights Reserved</p>
+    </div>
+</footer>
+</html>

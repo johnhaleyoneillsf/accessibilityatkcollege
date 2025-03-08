@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="English">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.K.C - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png">
+    <script src="english.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
+            <div class="title-text">Accessibility at Kalamazoo College</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="interviews.html">Interviews</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="language-switcher">
+        <div class="text-contain">
+           <label>Font Size:</label>
+        </div>
+        <div style="position: relative; height: 20px;" class="slider-container">
+            <input style="position: relative; top: -20px;" type="range" min="1" max="4" value="2" class="slider" id="slider" oninput="adjustFontSize(this.value)">
+        </div>
+        <div class="language-actual">
+            <a href="inicio.html" class="button">Español</a>
+        </div>
+    </div>
+    <main style="min-height: 100vh;">
+        <div class="content-box" style="line-height: 1;font-size: 1.4em; margin-top: 0px; height: fit-content;">
+            <h3 style="text-align: left;">Accessibility on Campus:</h3>
+            <p style="text-align: left;">• 27.3% of buildings on the main campus have elevators</p>
+            <p style="text-align: left;">• There are 24 accessible parking spots in the main campus</p>
+            <a style="float: left;text-decoration: none;padding: 10px 15px;border-radius: 15px;background-color: #EC6820;color: #ffffff;transition: background-color 0.3s; border: 3px solid #361f1f" href="#story">Our Story</a><a style="float: left; margin-left: 20px;text-decoration: none;padding: 10px 15px;border-radius: 15px;background-color: #EC6820;color: #ffffff;transition: background-color 0.3s; border: 3px solid #361f1f" href="#inaccesibility">Examples</a><br><br>
+        </div>
+        <div style="clear: both;position: relative;line-height: 2;font-size: 1.4em;" id="story"class="content-box">
+            <h2>Our Story</h2>
+            <p style="text-align: left;">&emsp;Accessibility at Kalamazoo College originated because of our examination of the structure of Kalamazoo College and the inclusion of students on campus through accessibility. We discovered that much of the campus is not accessible because there are no ramps, automatic doors, and elevators. Therefore, we created a detailed project about the accessibility of the campus: how it works, the limitations, and additional resources because we want our community to be informed and that people with disabilities are not forgotten or ignored en our community. We want to make changes in the Kalamazoo College campus, we hope this project influences the K community and faculty to make the campus more accessible for everyone.</p>
+        </div>
+        <h3 id="inaccesibility"style="text-align: center;">Accessible locations at Kalamazoo College</h3>
+        <div class="content-box"style="max-width:600px;float:left;margin-left:65px; margin-top: 0px;padding: 0px;">
+            <img src="https://i.gyazo.com/5800882754a6448acdf34f86bf77140e.png" alt="Placeholder Image" style="width:300px;height:222px;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;border-top-right-radius:0px;float: left;">
+            <img src="https://i.gyazo.com/1b951e27b9abd94811bbd5ba3de50b7e.png" alt="Placeholder Image" style="width:300px;height:222px;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;border-top-left-radius:0px;float:left;">
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px;font-weight: bold; font-size: 1.4em;">Fine Arts Building</p>
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px; font-size: 1.3em">On the left, this photo shows the automatic doors of the Fine Arts Building (FAB). The automatic doors are on the first level in the back of the building leading to the parking lot shared with Dow. On the right, the photo is of the main doors connecting to the lobby and staircases inside the building of the FAB. These doors are accessed with stairs. Even though this building is accessible, it is not inclusive in having ramps and automatic doors as part of the main entrance. 
+            </p>
+        </div>
+        <div class="content-box"style="max-width:600px;float:left;margin-left:65px; margin-top: 0px;padding: 0px;">
+            <img src="https://i.gyazo.com/866b51d7481092b806384712acb85573.png" alt="Placeholder Image" style="width:300px;height:222px;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;border-top-right-radius:0px;float: left;">
+            <img src="https://i.gyazo.com/0dd03f4849a3c1d8f93b682f8769d34e.png" alt="Placeholder Image" style="width:300px;height:222px;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;border-top-left-radius:0px;float:left;">
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px;font-weight: bold; font-size: 1.4em;">Residential Halls</p>
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px; font-size: 1.3em">These photos show the two dorm halls available for students with disabilities. Hobin, pictured on the left, has a ramp leading to an automatic door with first-floor access to accessible dorm rooms for first years only. DeWaters, pictured on the right, has sidewalks from the Throwbridge/Dewaters parking lot to the DeWaters dorm, which has automatic doors on the second floor and the dorm rooms available for disabled students. Neither of these dorm halls has elevators. However, there is still access to a kitchen area.
+            </p>
+        </div>
+
+        <div class="content-box"style="max-width:600px;float:left;margin-left:65px; margin-top: 0px;padding: 0px;">
+            <img src="https://i.gyazo.com/a3a188ecf5cce12996d68249c8e23197.png" alt="Placeholder Image" style="width:300px;height:222px;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;border-top-right-radius:0px;float: left;">
+            <img src="https://i.gyazo.com/f5edcada5196d5cc964462c07e412fbc.png" alt="Placeholder Image" style="width:300px;height:222px;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;border-top-left-radius:0px;float:left;">
+            <img src="https://i.gyazo.com/4e266fe1bab29d7ecb34bcd879f8ba43.png" alt="Placeholder Image" style="width:600px;height:auto;margin:0px;border-radius: 0px;float:left;">
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px;font-weight: bold; font-size: 1.4em;">Stetson Chapel</p>
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px; font-size: 1.3em">Both photos on the left show the same entrance, as to indicate the ramp  that is available for the accessible entrance to the Chapel. This is on the left side of the main entrance. The Chapel, unfortunately, does not have an elevator to be able to access the Cavern in the basement. The Cavern is pictured on the right, and has stairs immediately when you enter. 
+            </p>
+        </div>
+
+
+
+        <div class="content-box"style="max-width:600px;float:left;margin-left:65px; margin-top: 0px;padding: 0px;">
+            <img src="https://i.gyazo.com/78a7e954cf2c8b4afe76ce98ab0af69b.png" alt="Placeholder Image" style="width:auto;height:auto;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;">
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px;font-weight: bold; font-size: 1.4em;">The Playhouse</p>
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px; font-size: 1.3em">This photo shows the entrance to the Festival Playhouse, which can be accessed with a ramp and stairs. However, there are no automatic doors, which would not only help disabled people but also anyone who is in need of that assistance. 
+            </p>
+        </div>
+        <div class="content-box"style="max-width:600px;float:left;margin-left:65px; margin-top: 0px;padding: 0px;">
+            <img src="https://i.gyazo.com/25236f5c5cbaa4d4752d41e39564e370.png" alt="Placeholder Image" style="width:auto;height:auto;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;">
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px;font-weight: bold; font-size: 1.4em;">Dow Science Center</p>
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px; font-size: 1.3em">Here this image displays the doors leading to Dow Science Center (the most commonly used doors to enter the building), which are also the closest to the parking lot in between Dow and the Fine Arts Building. These doors also lead to the elevator used in the building and staircases to two levels. There are ramps located in front of Dow from the parking lot onto the sidewalk. However, the building does not have automatic doors to enter.  
+            </p>
+        </div>
+        <div class="content-box"style="max-width:600px;float:left;margin-left:65px; margin-top: 0px;padding: 0px;">
+            <img src="https://i.gyazo.com/03a93aa9841a5220fedad1ec22d0e09b.png" alt="Placeholder Image" style="width:auto;height:auto;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;">
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px;font-weight: bold; font-size: 1.4em;">Upjohn Library</p>
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px; font-size: 1.3em">The Upjohn Library has automatic doors and ramps to be able to access the main entrance. It also has an elevator that is by the entrance. 
+            </p>
+        </div>
+        <div class="content-box"style="max-width:600px;float:left;margin-left:65px; margin-top: 0px;padding: 0px;">
+            <img src="https://i.gyazo.com/b10d39996e5e5ea6d43e04769a6c55ea.png" alt="Placeholder Image" style="width:auto;height:auto;margin:0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;">
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px;font-weight: bold; font-size: 1.4em;">Academy Street - Near Dewing</p>
+            <p style="word-wrap:break-word;overflow-wrap: break-word;hyphens: auto; margin: 10px; font-size: 1.3em">This photo shows two of the accessible parking spots that are available on Academy Street. The snow that has fallen has created a mound on the grass area next to the sidewalk. The only way for a person to get out of their car and to a building would be onto the road. This can put people with disabilities at risk of being hit without proper pavement. 
+            </p>
+        </div>
+    </main>
+</body>
+<footer> 
+    <div class="content-box">
+        <p>©2025 Accessibility at Kalamazoo College • All Rights Reserved</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="Español">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.K.C - Entrevistas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png">
+    <script src="spanish.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
+            <div class="title-text">Accesibilidad en Kalamazoo College</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="entrevistas.html">Entrevistas</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="language-switcher">
+        <div class="text-contain">
+           <label>Tamaño de Letra:</label>
+        </div>
+        <div style="position: relative; height: 20px;" class="slider-container">
+            <input style="position: relative; top: -20px;" type="range" min="1" max="4" value="2" class="slider" id="slider" oninput="adjustFontSize(this.value)">
+        </div>
+        <div class="language-actual">
+            <a href="interviews.html" class="button">English</a>
+        </div>
+    </div>
+    <main style="min-height: 100vh;">
+        <div class="content-box" style="line-height: 1;font-size: 1.4em;">
+            <h2>Entrevistas:</h2>
+            <p>Aqui tenemos nuestros entrevistas con figuras notables acerca de la accesibilidad de Kalamazoo College.</p>
+            <h3 style="text-align: left; align-items: left;">Dana Jasnma, Decana adjunto de estudiantes.</h3>
+            <p style="text-align: left; align-items: left;">-Jansma works with students who need accomidations, withdrawals, medical leave, or need accomidations for various other reasons.</p>
+            <h3 style="text-align: left; align-items: left;">Fred Watstein, Architectual trades coordinator:</h3>
+            <p style="text-align: left; align-items: left;">-Watstein </p>
+            <h3 style="text-align: left; align-items: left;">Tanya Jachimiak, Director, Office of Gender Equity and Access, Title IX:</h3>
+        </div>
+        <div class="content-box" style="line-height: 2;font-size: 1.4em;">
+            <h2>Entrevista con Dana Jasnma, Decana adjunto de estudiantes:</h2>
+            <button class="toggle-button" onclick="toggleContent()">Read More</button>
+            <div id="content" style="display: none;">
+                <h3 style="text-align: left;">El papel de una decana adjunto de estudiantes:</h3>
+                <p>Jansma, como la decana adjunta de estudiantes, trabaja con estudiantes que necesitan acomodaciones, estudiantes que quieren dejar los estudios o quieren tomar licencia médica, y con estudiantes que tienen dificultades por muchas razones.  “Ayudo apoyar a los estudiantes y únelos con recursos adecuados,” dijo Jansma.  Después de llenar el formulario de acomodaciones por un estudiante, Jansma trabaja con el estudiante uno-a-uno, discutiendo los problemas y las acomodaciones que necesitan el estudiante. Las acomodaciones razonables dependen del estudiante; un estudiante que rompe su pierna no necesita tiempo extra para un examen, pero necesitaría ayuda navegando por el campus, entonces alguien que le conduce a sus clases puede ser actualizado. Jansma informa a los profesores de que acomodaciones requiere el estudiante y como pueden implementarlas en el aula. Los profesores no necesitan saber qué tipo de discapacidad tiene el estudiante, pero es la responsabilidad del estudiante para comunicar con el profesor para cuando necesitan las acomodaciones. </p>
+                <p>Las residencias son muy antiguas, Trowbridge fue construida en los 1920s, y fue construidas bajo de regulaciones diferentes – es por eso por lo que muchas de las residencias y los edificios son inaccesibles. Añadir los ascensores a los edificios será muy costoso. Entonces, como Kalamazoo College construye residencias nuevas, los ascensores se añade a los edificios y construirá para ser más accesible. Un obstáculo grande en haciendo que K es más accesible para las personas con problemas de movilidad es que el campus es construido encima de una colina.</p>
+                <p>Jansma se asocia con Alumni Engagement y Facilities Management para comprar un tapete para silla de ruedas utilizados en los eventos en el campus. “Me resalto fácil a trabajar con otros departamentos de campus, en el centro todos queremos que los estudiantes tienen éxito,” dijo Jansma. Los desafíos de financiación son limitaciones grandes en haciendo que el campus es más accesible, particularmente durante los recortes presupuestarios en toda la universidad.</p>
+                <p>Si un individua tiene quejas sobre la accessibilidad del campus, deben contactar Tanya Jachimiak, la coordinadora de Section 504 de Kalamazoo College. “Pueden haber solucciones y podemos hacerlo más rápido, como si el Oficio de Derechos Civiles recibe una queja, podrían pasar años antes de que lleguen a ella,” dijo Jansma. “Por favor, ven a mí o si una persona tiene preocupaciones generales sobre el campus, ven a Tanya,” añade Jansma.</p>
+            </div>
+        </div>
+        <div class="content-box" style="line-height: 2;font-size: 1.4em;">
+            <h2>Interview With Fred Watstein, Architectual trades coordinator:</h2>
+            <button class="toggle-button2" onclick="toggleContent2()">Read More</button>
+            <div id="content2" style="display: none;">
+                <p>Jansma, as the Associate Dean of Students, works with students who need accommodations, students if they need to withdraw or take medical leave, and students who are struggling for various reasons.  “I help support students and get them linked to appropriate resources,” said Jansma. After students file for an accommodation, she works with students on a one-on-one basis, talking through the students’ issues, struggles, and the accommodations they need. Reasonable accommodation depends on the student; a student who broke their leg does not need extra time on a test, but they would need help getting around campus, thus someone driving them to classes may be granted as an accommodation. Jansma also informs the professors of accommodations students require and how they can implement that in the classroom. Professors are not required to know what disability the student has, but it is the responsibility of the student to communicate with their professors on when they will need those accommodations.</p>
+            </div>
+        </div>
+    </main>
+</body>
+<footer> 
+    <div class="content-box">
+        <p>©2025 Accessibility at Kalamazoo College • All Rights Reserved</p>
+    </div>
+</footer>
+</html>

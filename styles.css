@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaddbf;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 110px;
+    background-color: #EC6820;
+    border-bottom: 4px solid #683737;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 30px;
+}
+
+.title-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #683737;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #361f1f;
+}
+
+.language-switcher {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 20px 0 0;
+}
+
+.language-switcher .button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border: 0px;
+    margin-right: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.language-actual {
+    text-decoration: none;
+    color: white;
+    background-color: #683737;
+    padding: 10px 15px;
+    border: 0px;
+    margin-right: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.language-actual:hover {
+    background-color: #361f1f;
+}
+
+
+
+.slider-container {
+    text-decoration: none;
+    color: white;
+    background-color: #683737;
+    padding: 10px 15px;
+    border: 0px;
+    margin-right: 0px;
+    border: 0px;
+    display: block;
+}
+.text-contain {
+    text-decoration: none;
+    color: white;
+    background-color: #683737;
+    padding: 10px 15px;
+    border: 0px;
+    margin-right: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: block;
+    margin-top: 0px;
+}
+.toggle-button {
+    text-decoration: none;
+    color: white;
+    background-color: #683737;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 0px;
+}
+.toggle-button2 {
+    text-decoration: none;
+    color: white;
+    background-color: #683737;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-section {
+    margin-right: 20px;
+}
+
+.leer-mas {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #EC6820;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.leer-mas:hover {
+    background-color: #d55c1a;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.galleria {
+    height: auto;
+    width: 300px;
+}
+
+.text-box {
+    padding: 20px;
+    background-color: #eaddbf;
+    border: 4px solid #361f1f;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-box p {
+    flex: 1;
+    margin: 0;
+}
+
+.content-box {
+    background: #eaddbf;
+    border: 4px solid #361f1f;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px;
+    align-items: center;
+}
+img, video {    
+    max-width: 100%;
+    border-radius: 10px;
+}   
+.toggle-button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+footer {
+
+    clear: both;
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+
+/* Add your existing CSS here */
+
+
+
+.language-switcher .text-contain {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+.font-label {
+
+    position: relative;
+
+    top: -30px;
+
+}
+
+
+
+.number-display {
+
+    margin-left: 10px;
+
+    position: relative;
+
+    top: -30px;
+
+}
+
+
+
+.button-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-left: 10px;
+
+    position: relative;
+
+    top: -30px;
+
+}
+
+
+
+.font-button {
+
+    background: transparent;
+
+    position: relative;
+
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7.5px;
+    background: #eaddbf;
+    margin-right: 5px;
+    margin-left: 5px;
+    outline: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-sizing: border-box; /* Ensure the slider fits within its container */
+    position: relative;
+    z-index: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background: #EC6820;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.slider::-moz-range-thumb {
+    width: 7.5px;
+    height: 20px;
+    background: #EC6820;
+    cursor: pointer;
+    border-radius: 5%;
+}
