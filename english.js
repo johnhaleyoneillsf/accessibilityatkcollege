@@ -1,25 +1,3 @@
-function toggleContent() {
-    var content = document.getElementById("content");
-    var button = document.querySelector(".toggle-button");
-    if (content.style.display === "none" || content.style.display === "") {
-        content.style.display = "block";
-        button.textContent = "Read Less";
-    } else {
-        content.style.display = "none";
-        button.textContent = "Read More";
-    }
-}
-function toggleContent2() {
-    var content = document.getElementById("content2");
-    var button = document.querySelector(".toggle-button2");
-    if (content.style.display === "none" || content.style.display === "") {
-        content.style.display = "block";
-        button.textContent = "Read Less";
-    } else {
-        content.style.display = "none";
-        button.textContent = "Read More";
-    }
-}
 window.onload = function() {
     var savedFontSize = localStorage.getItem("fontSize");
     if (savedFontSize) {
