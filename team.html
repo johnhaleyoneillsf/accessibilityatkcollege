@@ -8,6 +8,17 @@
     <link rel="icon" href="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png">
     <script src="english.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #special:hover {
+            background: linear-gradient(to right, #FFA500, #0000FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Papyrus', fantasy;
+            -webkit-user-select: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,7 +26,7 @@
             <img id="logo-desktop" src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
             <div id="title-desktop" class="title-text">Accessibility at Kalamazoo College</div>
         </div>
-        <nav>
+        <nav id="desktop-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="maps.html">Maps</a></li>
@@ -26,7 +37,7 @@
         </nav>
     </header>
     <div class="language-switcher">
-        <div class="text-contain">
+        <div id="font-size" class="text-contain">
            <label>Font Size:</label>
         </div>
         <div style="position: relative; height: 20px;" id="desktop-only" class="slider-container">
@@ -36,7 +47,6 @@
             <a href="equipo.html" class="button">Español</a>
         </div>
     </div>
-
     <main style="min-height: 160vh;">
         <div style="margin-top: 0px;"class="content-box">
             <h2>Meet the Team!</h2>
@@ -55,8 +65,8 @@
                 <img src="https://i.gyazo.com/e07a687a336569e99f9812d7f9dcc4fa.png" alt="Placeholder Image" style="width:200px;height:auto;">
                 <h1 style="overflow-wrap: break-word;">John O'Neill</h1>
                 <h3>(He/Him)</h3>
+                <p id="special">-Website Developer</p>
                 <p>-Group Member</p>
-                <p>-Website Technical Coordinator</p>
                 <p>-Writer</p>
                 <p style="overflow-wrap: break-word;">Hello! my name is John, <br> I am from San Francisco, California. and I am a Political Science and International and Area Studies major, as well as a Spanish minor. I believe Kalamazoo College to have pretty disregarded and ignored problems when it comes to accessibility on campus. I hope to use my knowledge in web design to help create an informative website for students, to increase accessibility around campus.</p>
                 <h3>Contact Information:</h3>
