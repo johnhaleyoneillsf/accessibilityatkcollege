@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png">
     <script src="english.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
         <div class="logo-title">
-            <img src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
-            <div class="title-text">Accessibility at Kalamazoo College</div>
+            <img id="logo-desktop" src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
+            <div id="title-desktop" class="title-text">Accessibility at Kalamazoo College</div>
         </div>
         <nav>
             <ul>
@@ -28,13 +29,14 @@
         <div class="text-contain">
            <label>Font Size:</label>
         </div>
-        <div style="position: relative; height: 20px;" class="slider-container">
+        <div style="position: relative; height: 20px;" id="desktop-only" class="slider-container">
             <input style="position: relative; top: -20px;" type="range" min="1" max="4" value="2" class="slider" id="slider" oninput="adjustFontSize(this.value)">
         </div>
         <div class="language-actual">
             <a href="equipo.html" class="button">Español</a>
         </div>
     </div>
+
     <main style="min-height: 160vh;">
         <div style="margin-top: 0px;"class="content-box">
             <h2>Meet the Team!</h2>
