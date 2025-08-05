@@ -325,12 +325,6 @@ footer {
 .language-button:hover {
     background-color: #361f1f; /* Change background color on hover */
 }
-.gradient-nav {
-  background: radial-gradient(circle,rgba(54, 31, 31, 1) 0%, rgba(104, 55, 55, 1) 100%);
-}
-.gradient-nav:hover {
-  background: radial-gradient(circle,rgba(54, 31, 31, 1)  0%, rgba(54, 31, 31, 1) 100%);
-}
 
 /* Default: mobile-first approach */
 .side-menu,
