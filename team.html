@@ -1,91 +1,95 @@
 <!DOCTYPE html>
-<html lang="English">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.K.C - Team</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png">
-    <script src="english.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        #special:hover {
-            background: linear-gradient(to right, #FFA500, #0000FF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
-            font-family: 'Papyrus', fantasy;
-            -webkit-user-select: none;
-        }
-    </style>
+    <title>Mobile Version</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="team-section.css">
+    <script src="node.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo-title">
-            <img id="logo-desktop" src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
-            <div id="title-desktop" class="title-text">Accessibility at Kalamazoo College</div>
+        <div class="navheader">
+            <nav>
+                <div class="logo-title">
+                    <img src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
+                </div>
+                <h1 class="title-text"><span class="akc-long">Accessibility at Kalamazoo College</span><span class="akc-short" style="display:none;">A.K.C.</span></h1>
+                <div class = "navlinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                        <li><a href="interviews.html">Interviews</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="team.html" class="gradient-nav">Team</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav id="desktop-nav">
+    </header>
+    <div id="side-menu" class="side-menu">
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="maps.html">Maps</a></li>
                 <li><a href="interviews.html">Interviews</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="team.html">Team</a></li>
+                <li><a href="resources.html">Resources</a></li> 
+                <li><a href="team.html" class="gradient-nav">Team</a></li>
             </ul>
         </nav>
-    </header>
-    <div class="language-switcher">
-        <div id="font-size" class="text-contain">
-           <label>Font Size:</label>
-        </div>
-        <div style="position: relative; height: 20px;" id="desktop-only" class="slider-container">
-            <input style="position: relative; top: -20px;" type="range" min="1" max="4" value="2" class="slider" id="slider" oninput="adjustFontSize(this.value)">
-        </div>
-        <div class="language-actual">
-            <a href="equipo.html" class="button">Español</a>
-        </div>
     </div>
-    <main style="min-height: 160vh;">
-        <div style="margin-top: 0px;"class="content-box">
-            <h2>Meet the Team!</h2>
-            <p>We have worked hard to present to you the content of this site, thank you for viewership it is much appreciated! As part of a class project from our Spanish Digital Humanities course, we thank Dr. Vázquez Cruz from the Spanish Department for aiding the development of this project. All team members listed here are Kalamazoo College students, and all efforts including website hosting, ownership of our domain name, and website design have been made through us. Thank you!</p>
+    <button class="menu-arrow" onclick="toggleMenu()"><span>≡</span></button>
+    <a href="betaes" class="language-button">Español</a>
+    <a href="betaes" class="desktop-language">Español</a>
+    <a href="#top" class="up-top" aria-label="Scroll to top">
+  <img src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Scroll to top" style="display:block;width:28px;height:28px;margin:auto;"/>
+</a>
+    <div class="color-box"></div>
+    <div class="box-top"></div>
+    <section class="team-section">
+      <div class="team-flex">
+        <div class="team-members">
+          <div class="member-card">
+            <img src="https://i.gyazo.com/8c814cef4efa96e894c5308e1c432a13.png" alt="Rylee Lambert" class="member-img">
+            <h3>Rylee Lambert</h3>
+            <h4>(They/Them)</h4>
+            <ul>
+              <li>Group Member</li>
+              <li>Writer</li>
+            </ul>
+            <p>Hello! My name is Rylee. I am from Grand Rapids, Michigan and am currently studying at Kalamazoo College majoring in Spanish, Anthropology and Sociology with a minor in Studio Art. The reason I chose this project was to help with accessibility in my community to be more inclusive for everyone. Additionally, to demonstrate the inaccessibility at Kalamazoo College for accessibility to change on campus.</p>
+          </div>
+          <div class="member-card">
+            <img src="https://i.gyazo.com/e07a687a336569e99f9812d7f9dcc4fa.png" alt="John O'Neill" class="member-img">
+            <h3>John O'Neill</h3>
+            <h4>(He/Him)</h4>
+            <ul>
+              <li>Group Member</li>
+              <li>Web Designer</li>
+            </ul>
+            <p>Hello! my name is John. I am from San Francisco, California and I am a Political Science and International and Area Studies major, as well as a Spanish minor. I believe Kalamazoo College to have pretty disregarded and ignored problems when it comes to accessibility on campus. I hope to use my knowledge in web design to help create an informative website for students, to increase accessibility around campus.</p>
+            <h4>Contact Information:</h4>
+            <a href="https://www.linkedin.com/in/john-o-neill-ba8686225/" target="_blank" aria-label="John O'Neill LinkedIn">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="LinkedIn" class="member-linkedin">
+            </a>
+          </div>
+          <div class="member-card">
+            <img src="https://i.gyazo.com/e6d2e362b08bb5eb313c9b4432302f79.png" alt="Kinga Fraczkiewicz" class="member-img">
+            <h3>Kinga Fraczkiewicz</h3>
+            <h4>(She/Her)</h4>
+            <ul>
+              <li>Group Member</li>
+              <li>Writer</li>
+            </ul>
+            <p>Hello! My name is Kinga. I’m from Poland and Ireland, but I study at Kalamazoo College in Michigan. I’m studying Spanish and English Literature. I chose this project because I want every person in our community to have the freedom to move around campus without problems. I hope that this project joins the community together to achieve more accessibility at K college.</p>
+          </div>
         </div>
-            <div class="content-box"style="width: 22%;float:left;margin-top: 0px;margin-left: 5%; min-width: 250px;">
-                <img src="https://i.gyazo.com/8c814cef4efa96e894c5308e1c432a13.png" alt="Placeholder Image" style="width:200px;height:auto;">
-                <h1 style="overflow-wrap: break-word;">Rylee Lambert</h1>
-                <h3>(They/Them)</h3>
-                <p>-Group Member</p>
-                <p>-Visual Designer</p>
-                <p>-Writer</p>
-                <p style="overflow-wrap: break-word;">Hello! My name is Rylee, <br> I am from Grand Rapids, Michigan and am currently studying at Kalamazoo College majoring in Spanish, Anthropology and Sociology with a minor in Studio Art. The reason I chose this project was to help with accessibility in my community to be more inclusive for everyone. Additionally, to demonstrate the inaccessibility at Kalamazoo College for accessibility to change on campus.</p>
-            </div>
-            <div class="content-box"style="width: 22%;float:left;margin-top: 0px;margin-left: 2%; min-width: 250px;">
-                <img src="https://i.gyazo.com/e07a687a336569e99f9812d7f9dcc4fa.png" alt="Placeholder Image" style="width:200px;height:auto;">
-                <h1 style="overflow-wrap: break-word;">John O'Neill</h1>
-                <h3>(He/Him)</h3>
-                <p id="special">-Website Developer</p>
-                <p>-Group Member</p>
-                <p>-Writer</p>
-                <p style="overflow-wrap: break-word;">Hello! my name is John, <br> I am from San Francisco, California. and I am a Political Science and International and Area Studies major, as well as a Spanish minor. I believe Kalamazoo College to have pretty disregarded and ignored problems when it comes to accessibility on campus. I hope to use my knowledge in web design to help create an informative website for students, to increase accessibility around campus.</p>
-                <h3>Contact Information:</h3>
-                <a href="https://www.linkedin.com/in/john-o-neill-ba8686225/" target="_blank">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s"alt="LinkedIn"style="width: 40px; height: 40px; border-radius: 20%;">
-                </a>
-            </div>
-            <div class="content-box"style="width: 22%;float:left;margin-top: 0px;margin-left: 2%; min-width: 250px;">
-                <img src="https://i.gyazo.com/e6d2e362b08bb5eb313c9b4432302f79.png" alt="Placeholder Image" style="width:200px;height:auto;">
-                <h1 style="overflow-wrap: break-word;">Kinga Fraczkiewicz</h1>
-                <h3>(She/Her)</h3>
-                <p>-Group Member</p>
-                <p>-Research Coordinator</p>
-                <p>-Writer</p>
-                <p style="overflow-wrap: break-word;">Hello! My name is Kinga, <br> I’m from Poland and Ireland, but I study at Kalamazoo College in Michigan. I’m studying Spanish and English Literature. I chose this project because I want every person in our community to have the freedom to move around campus without problems. I hope that this project joins the community together to achieve more accessibility at K college.</p>
-            </div>
-    </main>
-    <footer> 
-        <div class="content-box">
-            <p>©2025 Accessibility at Kalamazoo College • All Rights Reserved</p>
+      </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <span class="footer-contact">(Update Demonstration) - &copy; 2025 Accessibility at Kalamazoo College</span>
         </div>
     </footer>
 </body>

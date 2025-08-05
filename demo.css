@@ -1,0 +1,543 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #eaddbf;
+}
+
+header {
+    display: flex-start;
+    justify-content: space-between;
+    background-color: #EC6820;
+    border-bottom: 4px solid #683737;
+    width: 100vw;         /* Ensures header always matches viewport width */
+    min-width: 100vw;     /* Prevents shrinking below viewport */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent scrolling in any direction */
+    top:0px;
+    position: absolute;
+    margin-top: 4px;    
+    margin-bottom: 0px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    position:absolute;
+    left: 37px;
+    top: 16px;
+    z-index: 100000;
+}
+
+.title-text {
+    font-size: clamp(1rem, 4vw, 2rem); /* scales between 1rem and 2rem depending on width */
+    font-weight: bold;
+    white-space: nowrap; /* prevents wrapping */
+    overflow: hidden;
+    color: white;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.navheader {
+    display: flex;
+    justify-content: space-between; /* Push left & right to edges */
+    align-items: center;
+  }
+
+  .navheader nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 150px;
+    display: flex;
+    left: 0px;
+    top: 64px;
+
+  }
+  
+  .navheader nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #683737;
+    width: 147px;
+    height: 50px;
+    font-size: 1.5em;
+    box-sizing: border-box;
+  }
+  
+.navheader nav ul li a:hover {
+    background-color:#361f1f;
+  }
+
+  .navheader nav ul li:first-child a {
+    border-top-left-radius: 15px;;
+  }
+  .navheader nav ul li:last-child a {
+    border-top-right-radius: 15px;;
+  }
+  
+img, video {    
+    max-width: 100%;
+    border-radius: 10px;
+}   
+
+.side-menu {
+    position: fixed;
+    left: -264px; /* Fully hidden by default */
+    width: 260px;
+    height: 1000%;;
+    margin-top : -50px;
+    
+    background-color: #EC6820;
+    border-right: 4px solid #683737;
+    transition: left 0.3s ease-in-out;
+    overflow: visible; /* Ensure the arrow is not clipped */
+    z-index: 80    ; /* Ensure it appears above other elements */
+    
+  
+}
+
+.side-menu.open {
+    left: -20px;; /* Slide in fully when open */
+}
+
+.side-menu nav ul {
+    list-style: none;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: left; /* Center items horizontally */
+}
+
+.side-menu nav ul li {
+    margin: 10px 0; /* Add spacing between buttons */
+}
+
+a, a:visited {
+    color: #2a3b84;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #2a3b84;
+}
+a:active {
+    color: #2a3b84;
+}
+
+.footer-content {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-top: none;
+    line-height: 20px;
+    overflow: visible;
+    font-size: clamp(0.2rem, 4vw, 1.3rem);
+}
+
+
+footer {
+    background-color:#cfc5aba4;
+    margin: 10px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.side-menu nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #683737;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    transition: left 0.3s ease-in-out;
+    width: 200px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    line-height: 20px; /* Center text vertically */
+    box-sizing: border-box; /* Ensure padding is included in the size */
+}
+
+.side-menu nav ul li a:hover {
+    background-color: #361f1f;
+}
+
+.menu-arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #683737;
+    color: #ffffff;
+    border: none;
+    border-top-left-radius: 0px;
+
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    position: sticky;
+    margin-top: 50px;
+    top: 0px;
+    left: -4px;
+    z-index: 300; 
+    transition: left 0.3s ease-in-out,border-top-left-radius 0.3s ease;
+}
+
+.color-box {
+    display: block;
+    width: 400px;
+    height: 300px;
+    background-color: #EC6820;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 50px;
+    position: sticky;
+    margin-top: -325px;
+    top: -270px;
+    left: -50px; 
+    z-index: 80; 
+    transition: transform 0.33s ease-in-out;
+    transform-origin: left center; /* scale from left edge */
+    transform: scaleX(0.3); /* fully visible */
+}
+
+.box-top {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #EC6820;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 50px;
+    position: sticky;
+    margin-top: -325px;
+    top: -300px;
+    left: 0px; 
+    z-index: 80; 
+}
+
+.language-button {
+    display: block; /* Ensure the button is displayed */
+    height: 50px; /* Set a fixed height */
+    width: 120px;
+    background-color: #683737; /* Set a visible background color */
+    color: #ffffff !important; /* Set a contrasting text color */
+    border: none; /* Remove any border */
+    border-bottom-right-radius: 15px;
+    font-size: 1.5em; /* Set font size */
+    cursor: pointer; /* Show pointer on hover */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Center text vertically */
+    float: right;
+    top: 0px;
+    position: sticky; /* Position it directly on the screen */
+    margin-top: -50px; /* Align vertically to the middle of the screen */
+    left: 25px; /* Position it 20px from the right of the screen */
+    z-index: 500; /* Ensure it appears above other elements */
+    text-decoration: none;
+    transition: left 0.3s ease-in-out;
+    padding-right: 0px;
+}
+
+.language-button:visited,
+.language-button:hover,
+.language-button:focus,
+.language-button:active {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #361f1f;
+}
+
+.menu-arrow span {
+    display: inline-block;
+    font-size: 1.5em; /* Set font size for the arrow */
+    top: 40%;
+    left: 29%;
+}
+
+.menu-arrow:hover {
+    background-color: #361f1f; /* Change background color on hover */
+}
+
+.side-menu.open ~ .menu-arrow {
+    left: 240px;
+    border-top-left-radius: 15px;
+}
+.side-menu.open ~ .language-button {
+    left: 270px;
+}
+@media screen and (min-width: 1010px) {
+.side-menu.open ~ .color-box {
+    transform: scaleX(1.4);
+}
+}
+@media screen and (max-width: 1009px) {
+    .side-menu.open ~ .color-box {
+        transform: scaleX(0.7);
+    }
+}
+
+.menu-arrow-wrapper {
+    position: relative;
+    width: 0; /* Ensure it doesn't affect layout */
+    height: 0; /* Ensure it doesn't affect layout */
+    overflow: visible; /* Ensure the arrow is not clipped */
+    z-index: 3000; /* Ensure it stays above other elements */
+}
+
+.custom-links a, .custom-links a:visited {
+  color: #d2691e;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.custom-links a:hover, .custom-links a:focus {
+  color: #b22222;
+  text-decoration: none;
+}
+.custom-links a:active {
+  color: #000;
+}
+
+.language-button span {
+    display: inline-block;
+    font-size: 1.5em; /* Set font size for the language text */
+}
+
+.language-button:hover {
+    background-color: #361f1f; /* Change background color on hover */
+}
+.gradient-nav {
+  background: radial-gradient(circle,rgba(54, 31, 31, 1) 0%, rgba(104, 55, 55, 1) 100%);
+}
+.gradient-nav:hover {
+  background: radial-gradient(circle,rgba(54, 31, 31, 1)  0%, rgba(54, 31, 31, 1) 100%);
+}
+
+/* Default: mobile-first approach */
+.side-menu,
+.menu-arrow {   
+    display: block;
+}   
+  
+  
+@media screen and (max-width: 1009px) {
+    .navlinks {
+        display: none;
+    }   
+
+    .title-text {
+        font-size: clamp(1rem, 4vw, 1.6rem); /* scales between 1rem and 2rem depending on width */
+        display: flex;
+        position: relative;
+        z-index: 1000;
+        margin-top: 82px;
+        left: -70px;
+        height: 100px;
+        line-height: 80px; /* Centers single line of text */
+        text-align: left; /* Centers horizontally (optional) */
+    }
+    .side-menu,
+    .menu-arrow {
+        display: block;
+    }
+    .box-top {
+        display: block;
+    }
+    .desktop-language {
+        display: none;
+    }
+    header {
+        position: absolute;
+        height: 150px;
+        margin-top: -96px;
+    }
+    .up-top {
+        display: none;
+    }
+    .logo-title {
+        top: 102px;      /* Adjust for vertical spacing */
+        left: 20px;     /* Ad   just for horizontal spacing */
+        height: 40px;   /* Set a smaller height */
+        width: 40px;    /* Maintain aspect ratio */
+    }
+    .language-button {
+        float: left;
+        width: 125px;
+        left: 25px;
+        text-align: right;
+        padding-right: 20px;
+        z-index: 100;
+    }
+    .desktop-language {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1010px) {
+    .side-menu,
+    .menu-arrow {
+        display: none;
+    }
+    .box-top {
+        display: none;
+    }
+    .navlinks  {
+        display: block;
+        position: relative;
+        margin-top: 114px;
+        z-index: 50000;
+    }
+    .desktop-language {
+        display: block;
+        text-decoration: none;
+        color: #fff !important;
+    }
+    .desktop-language:visited,
+    .desktop-language:hover,
+    .desktop-language:focus,
+    .desktop-language:active {
+        color: #fff !important;
+        text-decoration: none;
+        background-color: #361f1f;
+    }
+    .title-text {  
+        font-size: clamp(1rem, 4vw, 2rem);
+        top: 103px;
+        position: relative;
+        left: 30px;
+    }
+    header {
+        position: absolute;
+        height: 200px;
+        margin-top: -86px;
+    }
+    header img {
+        margin-top: 172px;
+    }
+    .navheader {
+        margin-top: -100px;
+        z-index: 1000;
+    }
+    .color-box {
+        display: none;
+    }
+    .logo-title {
+        position: relative;
+        left: 38px;
+        top: 116px;
+        z-index: 650px;
+        height: 80px;
+        width: 80px;
+    }
+    .language-button {
+        display: none;
+    }
+    .desktop-language {
+        display: block; /* Ensure the button is displayed */
+        height: 50px; /* Set a fixed height */
+        width: 120px;
+        background-color: #683737; /* Set a visible background color */
+        color: #ffffff; /* Set a contrasting text color */
+        border: none; /* Remove any border */
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0px;
+        font-size: 1.5em; /* Set font size */
+        cursor: pointer; /* Show pointer on hover */
+        text-align: center; /* Center text horizontally */
+        line-height: 50px; /* Center text vertically */
+        float: right;
+        top: 0px;
+        position: sticky; /* Position it directly on the screen */
+        margin-top: 20px; /* Align vertically to the middle of the screen */
+        left: 25px; /* Position it 20px from the right of the screen */
+        z-index: 500; /* Ensure it appears above other elements */
+        text-decoration: none;
+        transition: border-radius 0.3s;
+        padding-right: 0px;
+    }
+    .desktop-language:hover {
+        background-color: #361f1f;
+    }
+    .up-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        background-color: #683737;
+        color: #ffffff;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+        text-align: center;
+        line-height: 50px;
+        position: sticky;
+        float: right;
+        margin-top: 20px;
+        margin-right: -120px;
+        top: 0px;
+        z-index: 400;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+    }
+.up-top:hover {
+    background-color: #361f1f; /* Change background color on hover */
+}
+    .desktop-language.stuck {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+    .desktop-language:hover {
+        background-color: #361f1f; /* Change background color on hover */
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .akc-long { display: none !important; }
+    .akc-short { display: inline !important; }
+    .title-text {
+        font-size: 2.4rem;
+    }
+    .language-button {
+        display: none;
+    }
+    .menu-arrow {
+        border-radius: 15px;
+    }
+    .color-box {
+        transform: scaleX(0.1);
+        transition: none !important;
+    }
+    /* Restore transition for other cases */
+    @media screen and (min-width: 349px) {
+        .color-box {
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .title-text {
+        display: none;
+    }
+}
