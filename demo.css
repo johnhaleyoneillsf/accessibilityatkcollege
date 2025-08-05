@@ -104,11 +104,12 @@ img, video {
 }
 
 .side-menu.open {
-    left: -20px;; /* Slide in fully when open */
+    left: -40px;; /* Slide in fully when open */
 }
 
 .side-menu nav ul {
     list-style: none;
+    margin-left: 10px;
     margin-top: 150px;
     display: flex;
     flex-direction: column; /* Stack items vertically */
@@ -278,11 +279,11 @@ footer {
 }
 
 .side-menu.open ~ .menu-arrow {
-    left: 240px;
+    left: 220px;
     border-top-left-radius: 15px;
 }
 .side-menu.open ~ .language-button {
-    left: 270px;
+    left: 250px;
 }
 @media screen and (min-width: 1010px) {
 .side-menu.open ~ .color-box {
