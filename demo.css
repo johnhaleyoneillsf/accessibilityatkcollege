@@ -8,6 +8,10 @@ body {
     background-color: #eaddbf;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 header {
     display: flex-start;
     justify-content: space-between;
@@ -448,6 +452,9 @@ a::after {
     .desktop-language:active {
         color: #fff !important;
         text-decoration: none;
+    }
+
+    desktop-language:hover {
         background-color: #361f1f;
     }
     .title-text {  
