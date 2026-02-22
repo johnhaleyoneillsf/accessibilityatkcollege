@@ -1,63 +1,140 @@
 <!DOCTYPE html>
-<html lang="English">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.K.C - Maps</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mobile Version</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="maps-section.css">
     <link rel="icon" href="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png">
-    <script src="english.js"></script>
+    <script src="node.js"></script>
 </head>
-<body id="uptop">
+<body>
     <header>
-        <div class="logo-title">
-            <img src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
-            <div class="title-text">Accessibility at Kalamazoo College</div>
+        <div class="navheader">
+            <nav>
+                <div class="logo-title">
+                    <img src="https://i.gyazo.com/76314bc8bf805250363f31bf2da016ee.png" alt="Logo" class="logo">
+                </div>
+                <h1 class="title-text"><span class="akc-long">Accessibility at Kalamazoo College</span><span class="akc-short" style="display:none;">A.K.C.</span></h1>
+                <div class = "navlinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                        <li><a href="interviews.html">Interviews</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="team.html" class="gradient-nav">Team</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
+    </header>
+    <div id="side-menu" class="side-menu">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="maps.html">Maps</a></li>
                 <li><a href="interviews.html">Interviews</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="team.html">Team</a></li>
+                <li><a href="resources.html">Resources</a></li> 
+                <li><a href="team.html" class="gradient-nav">Team</a></li>
             </ul>
         </nav>
-    </header>
-    <div class="language-switcher">
-        <div class="text-contain">
-           <label>Font Size:</label>
-        </div>
-        <div style="position: relative; height: 20px;" class="slider-container">
-            <input style="position: relative; top: -20px;" type="range" min="1" max="4" value="2" class="slider" id="slider" oninput="adjustFontSize(this.value)">
-        </div>
-        <div class="language-actual">
-            <a href="mapas.html" class="button">Español</a>
-        </div>
     </div>
-    <main style="min-height: 100vh;">
-        <div class="content-box" style="line-height: 1;font-size: 1.4em; margin-top: 0px; height: fit-content;">
-            <h3 style="text-align: left;">Accessibility Maps of Kalamazoo College:</h3>
-            <a style="float: left;text-decoration: none;padding: 10px 15px;border-radius: 15px;background-color: #EC6820;color: #ffffff;transition: background-color 0.3s; border: 3px solid #361f1f" href="#buildings">Buildings</a><a style="float: left; margin-left: 20px;text-decoration: none;padding: 10px 15px;border-radius: 15px;background-color: #EC6820;color: #ffffff;transition: background-color 0.3s; border: 3px solid #361f1f" href="#pathways">Pathways</a><a style="float: left; margin-left: 20px;text-decoration: none;padding: 10px 15px;border-radius: 15px;background-color: #EC6820;color: #ffffff;transition: background-color 0.3s; border: 3px solid #361f1f" href="#parking">Parking</a><br><br>
+    <button class="menu-arrow" onclick="toggleMenu()"><span>≡</span></button>
+    <a href="equipo.html" class="language-button">Español</a>
+    <a href="equipo.html" class="desktop-language">Español</a>
+    <a href="#top" class="up-top" aria-label="Scroll to top">
+  <img src="https://docs.google.com/drawings/d/e/2PACX-1vQKJ81VEbHwMpSqLYjCvG0v0mx4ADaA1pBh1P8PZUmLdVGyQyRpR_IPjm197MFxAXhC3EaI3UtEAimB/pub?w=480&amp;h=360" alt="Scroll to top" style="display:block;width:28px;height:28px;margin:auto;"/>
+</a>
+    <div class="color-box"></div>
+    <div class="box-top"></div>
+    <section class="interviews-section">
+      <div class="interviews-container">
+        <div style="padding-bottom: 10px;margin-bottom:0px;" class="interview-box home-hero-interview">
+          <h2>Maps illustrating accessible locations in Kalamazoo College:</h2>
         </div>
-        <div class="content-box">
-            <a id="buildings"style="text-decoration: none;color:black" href="#uptop">▲</a><h2 style="text-align: left;">Accessible Buildings</h2>
-            <img src="https://i.gyazo.com/93203fff535d7286170e9a57917bf14a.png" >
+      </div>
+    </section>
+    <section style="margin-top: -110px;padding:0px;"class="team-section">
+        <div class="team-flex">
+          <div class="team-members">
+            <div class="member-card">
+              <div class="card-media">
+                <img src="https://i.gyazo.com/5800882754a6448acdf34f86bf77140e.png" alt="Campus accessibility map sample">
+                <button class="expand-btn" data-full="https://i.gyazo.com/5800882754a6448acdf34f86bf77140e.png">Expand</button>
+              </div>
+              <h3>Rylee Lambert</h3>
+            </div>
+            <div class="member-card">
+              <div class="card-media">
+                <img src="https://i.gyazo.com/25236f5c5cbaa4d4752d41e39564e370.png" alt="Building access example">
+                <button class="expand-btn" data-full="https://i.gyazo.com/25236f5c5cbaa4d4752d41e39564e370.png">Expand</button>
+              </div>
+              <h3>John O'Neill</h3>
+            </div>
+            <div class="member-card">
+              <div class="card-media">
+                <img src="https://i.gyazo.com/03a93aa9841a5220fedad1ec22d0e09b.png" alt="Library access example">
+                <button class="expand-btn" data-full="https://i.gyazo.com/03a93aa9841a5220fedad1ec22d0e09b.png">Expand</button>
+              </div>
+              <h3>Kinga Fraczkiewicz</h3>
+            </div>
+          </div>
         </div>
-        <div class="content-box">
-            <a id="pathways"style="text-decoration: none;color:black" href="#uptop">▲</a><h2 style="text-align: left;">Accessible Pathways</h2>
-            <img src="https://i.gyazo.com/711ea97e28bae3ae42a95dabece55030.png"  >
+      </section>
+      
+      <!-- Image modal -->
+      <div class="image-modal" id="imageModal" aria-hidden="true">
+        <div class="image-modal__content">
+          <button class="image-modal__close" aria-label="Close">×</button>
+          <img src="" alt="Expanded view" id="imageModalImg">
         </div>
-        <div class="content-box">
-            <a id="parking"style="text-decoration: none;color:black" href="#uptop">▲</a><h2 style="text-align: left;">Accessible Parking</h2>
-            <img src="https://i.gyazo.com/3a7c15d5164610c7d299a5da843e4ba5.png"  >
+      </div>
+    <footer>
+        <div class="footer-content">
+            <span class="footer-contact">(Update Demonstration) - &copy; 2025 Accessibility at Kalamazoo College</span>
         </div>
-    </main>
+    </footer>
+
+<script>
+  (function() {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('imageModalImg');
+    const closeBtn = modal.querySelector('.image-modal__close');
+    const expandButtons = document.querySelectorAll('.expand-btn');
+
+    function openModal(src, alt) {
+      modalImg.src = src;
+      modalImg.alt = alt || 'Expanded view';
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      modalImg.src = '';
+    }
+
+    expandButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const src = btn.dataset.full || btn.previousElementSibling?.src;
+        const alt = btn.previousElementSibling?.alt;
+        if (src) openModal(src, alt);
+      });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    });
+  })();
+</script>
 </body>
-<footer> 
-    <div class="content-box">
-        <p>The maps used are property of Kalamazoo College (this use is for educational purposes) <a href="https://www.kzoo.edu/about/files/2022/05/Kalamazoo-College-Map-8.5x11-color.pdf" target="_blank">Map Used</a></p>
-        <p>©2025 Accessibility at Kalamazoo College • All Rights Reserved</p>
-    </div>
-</footer>
 </html>

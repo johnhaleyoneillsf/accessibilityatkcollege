@@ -86,10 +86,6 @@
     border-bottom: 3px solid #eaddbf;
     padding: 1em 0.5em 1.2em 0.5em;
   }
-  .member-img {
-    width: 100px;
-    height: 100px;
-  }
 }
 .member-card {
   background: hsl(38, 100%, 90%);
@@ -105,11 +101,26 @@
   align-items: center;
   margin-bottom: 0;
   margin-top: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Disable hover lift on touch/small screens */
+@media (max-width: 1009px) {
+  .member-card:hover {
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 .member-img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 200px;
+  height: 100px;
+  border-radius: 15px;
   object-fit: cover;
   margin-bottom: 0.8rem;
   border: 3px solid #eaddbf;
@@ -123,15 +134,14 @@
 }
 .member-card h3 {
   margin: 0 0 0.2rem 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #683737;
   font-weight: bold;
   text-align: center;
 }
 .member-card h4 {
-  margin: 10px;
-  margin-top: 5px;
-  font-size: .8rem;
+  margin: 0.7rem 0 0.5rem 0;
+  font-size: 1.1rem;
   color: #683737;
   text-align: center;
 }
@@ -139,7 +149,6 @@
 .member-card p {
     color: #683737;
     font-weight: bold;
-
 }
 .member-card ul {
   list-style: none;
@@ -217,10 +226,6 @@ margin-left: 2px;
     max-width: 98vw;
     min-width: 0;
     padding: 1em 0.5em 1.2em 0.5em;
-  }
-  .member-img {
-    width: 100px;
-    height: 100px;
   }
   .team-intro {
     padding: 1.2em 0.7em 1.2em 0.7em;
